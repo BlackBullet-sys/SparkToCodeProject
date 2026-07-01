@@ -88,10 +88,45 @@
             }
 
             ///////////////////////////////////////////////////////////////////////////////////////
-            
 
 
+            /*
+             Task 5:
+             Ask the user to enter a single character representing a grade ('A', 'B', 'C', 'D', or 'F') and print the meaning of that
+             grade using a switch-case statement.
+             */
 
+            Console.Write("\nPlease Enter your Grade: ");
+            string Grade = Console.ReadLine();
+
+            switch (Grade)
+            {
+                case "A":
+                    Console.WriteLine("Excellent");
+                    break;
+
+                case "B":
+                    Console.WriteLine("Very Good");
+                    break;
+
+                case "C":
+                    Console.WriteLine("Good");
+                    break;
+
+                case "D":
+                    Console.WriteLine("Pass");
+                    break;
+
+                case "F":
+                    Console.WriteLine("Fail");
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid Grade");
+                    break;
+            }
+
+            ///////////////////////////////////////////////////////////////////////////////////////
         }
     }
 }
